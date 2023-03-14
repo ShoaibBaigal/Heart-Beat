@@ -1,0 +1,40 @@
+.heart {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 50px auto;
+  }
+  
+  .heart span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+  }
+  
+  .heart span:nth-of-type(1) {
+    top: 0;
+    left: 10px;
+    animation: beat 1s ease-in-out infinite;
+  }
+  
+  .heart span:nth-of-type(2) {
+    top: 10px;
+    left: 0;
+    animation: beat 1s ease-in-out 0.5s infinite;
+  }
+  
+  @keyframes beat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
